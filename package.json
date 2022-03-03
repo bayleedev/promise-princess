@@ -1,0 +1,8 @@
+{
+  "name": "promise-princess",
+  "license": "Unlicense",
+  "scripts": {
+    "start": "node runner.js",
+    "princess": "echo wiggles"
+  }
+}

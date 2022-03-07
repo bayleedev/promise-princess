@@ -22,7 +22,7 @@ module.exports = (assert) => {
     // call this during a failed operation
     // with any useful data you wish to pass to `catch`
 
-    accept('🐊'); // 🐽
+    reject('🐊'); // 🐽
   }).then((resolvedData) => {
 
     // the first function in `then` is called when

@@ -11,18 +11,20 @@ module.exports = (assert) => {
   //
   // Create a `new Promise` and pass in an
   // anonymous function with two arguments
+  //
+  // argument 1 is "resolve"
+  // call this during a successful operation
+  // with any useful data you wish to pass to `then`
+  //
+  // argument 2 is "reject"
+  // call this during a failed operation
+  // with any useful data you wish to pass to `catch`
 
   return new Promise((resolve, reject) => {
 
-    // argument 1 is "resolve"
-    // call this during a successful operation
-    // with any useful data you wish to pass to `then`
-    //
-    // argument 2 is "reject"
-    // call this during a failed operation
-    // with any useful data you wish to pass to `catch`
+    // 🐽 Princess thinks, this is the ONLY line you want to edit
+    reject('🐊');
 
-    reject('🐊'); // 🐽
   }).then((resolvedData) => {
 
     // the first function in `then` is called when

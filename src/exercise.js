@@ -32,7 +32,7 @@ class Exercise {
   catchIt (errorObject) {
     console.log('\n', EMOJI_TRAIN, '\n');
     console.log('🐶 Ruh roh, it looks like', this.exerciseFile, 'did not pass.');
-    console.log('☔ Open ', this.exerciseFile + '/index.js to debug');
+    console.log('☔ Open `./exercises/' + this.exerciseFile + '/index.js` to debug');
     console.log('\n', EMOJI_TRAIN, '\n\n');
     const regexp = new RegExp(this.exerciseFile);
     console.log(errorObject.stack.split('\n').filter((line, index) => {

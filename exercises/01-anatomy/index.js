@@ -1,5 +1,6 @@
+// Exercise 1
 // 🐶 Princess dreams of being an alligator hunter
-// I promised I'd give her an alligator, can you help?
+// I 'promised' I'd give her an alligator, can you help?
 //
 // Emoji Key:
 // ⭐ - Try and get your code here
@@ -25,14 +26,14 @@ module.exports = (assert) => {
     // 🐽 Princess thinks, this is the ONLY line you want to edit
     reject('🐊');
 
-  }).then((resolvedData) => {
+  }).then((maybeSnack) => {
 
     // the first function in `then` is called when
     // the previous chain is `resolve`d
     // ⭐ Getting here is the goal
 
-    assert(resolvedData === '🐊', 'Omnomnom ty --Princess');
-  }).catch((rejectedData) => {
+    assert(maybeSnack === '🐊', 'Omnomnom ty --Princess');
+  }).catch((maybeSnack) => {
 
     // the first function in `catch` is called when
     // the previous chain is `reject`d or an error is thrown

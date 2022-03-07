@@ -1,5 +1,14 @@
-// 🐶 Princess dreams of being an alligator hunter
-// I promised I'd give her an alligator, can you help?
+const {
+  Princess,
+  PrincessError,
+  AlreadyAwake,
+  AlreadyAsleep,
+} = require('./constants');
+
+// Exercise 2
+// 🐶 Princess is 😪 sleepy.
+// I 'promised' her a snack before she went to sleep
+// Can you make sure she's 🐊 snacked up, and 🛌 asleep?
 //
 // Emoji Key:
 // ⭐ - Try and get your code here
@@ -7,34 +16,20 @@
 
 module.exports = (assert) => {
 
-  // 1: The anatomy of a promise
-  //
-  // Create a `new Promise` and pass in an
-  // anonymous function with two arguments
+  // Here we create a 👑 Princess object
+  const princess = new Princess();
 
   return new Promise((resolve, reject) => {
 
-    // argument 1 is "resolve"
-    // call this during a successful operation
-    // with any useful data you wish to pass to `then`
-    //
-    // argument 2 is "reject"
-    // call this during a failed operation
-    // with any useful data you wish to pass to `catch`
+    // princess.sleep() will throw `AlreadyAsleep`
+    // if she is already asleep, ensure she gets an alligator
+    if (princess.sleep()) resolve('🐊');
 
-    reject('🐊'); // 🐽
-  }).then((resolvedData) => {
+  }).then((maybeSnack) => {
+    // 🐽 TIP: Try adding a catch before `then` that returns an alligator
 
-    // the first function in `then` is called when
-    // the previous chain is `resolve`d
-    // ⭐ Getting here is the goal
-
-    assert(resolvedData === '🐊', 'BT Omnomnom ty --Princess');
-  }).catch((rejectedData) => {
-
-    // the first function in `catch` is called when
-    // the previous chain is `reject`d or an error is thrown
-
-    assert(false, 'BT 😩 How do we get to the `then` above?');
+    // ⭐ The goal is to get here, with a 🐊 snack
+    assert(maybeSnack === '🐊', 'Omnomnom ty --Princess');
+    assert(princess.isAsleep(), 'Princess isnt asleep, wahhh') // pig nose
   });
 }

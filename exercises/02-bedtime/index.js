@@ -10,6 +10,9 @@ const {
 // I 'promised' her a snack before she went to sleep
 // Can you make sure she's 🐊 snacked up, and 🛌 asleep?
 //
+// 🕸 API Reference 🕸
+// 🧵 Hint: Every `Princess` class method, in this exercise, is synchronous.
+//
 // Emoji Key:
 // ⭐ - Try and get your code here
 // 🐽 - Princess found a hint! maybe a line to change.

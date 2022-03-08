@@ -12,6 +12,9 @@ const { Princess } = require('./constants');
 // It might be worth taking a gander at the docs:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
 //
+// 🕸 API Reference 🕸
+// 🧵 Hint: `princess.bellyRub()` returns a `Promise`.
+//
 // Emoji Key:
 // ⭐ - Try and get your code here
 // 🐽 - Princess found a hint! maybe a line to change.

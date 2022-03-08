@@ -10,6 +10,10 @@ const { Princess } = require('./constants');
 // You can return a `new Promise(...)` and that'll become the item the rest of
 // the `then` and `catch` chain onto.
 //
+// 🕸 API Reference 🕸
+// 🧵 Hint: `princess.giveTreat()` returns a `Promise`.
+// 🧵 Hint: `princess.isHappy()` is synchronous.
+//
 // Emoji Key:
 // ⭐ - Try and get your code here
 // 🐽 - Princess found a hint! maybe a line to change.

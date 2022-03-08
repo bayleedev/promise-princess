@@ -7,14 +7,17 @@ class Princess {
     this.asleep = true;
   }
 
+  // synchronous
   isAwake () {
     return ! this.isAsleep();
   }
 
+  // synchronous
   isAsleep () {
     return this.asleep;
   }
 
+  // synchronous
   sleep () {
     if (this.asleep) {
       throw new AlreadyAsleep('Princess is already asleep');
@@ -23,6 +26,7 @@ class Princess {
     }
   }
 
+  // synchronous
   wake () {
     if (!this.asleep) {
       throw new AlreadyAwake('Princess is already awake');

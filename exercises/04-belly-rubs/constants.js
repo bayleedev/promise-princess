@@ -6,6 +6,7 @@ class Princess {
     this.count = 0;
   }
 
+  // asynchronous
   bellyRub () {
     this.count++;
     return Promise.resolve().then(() => {

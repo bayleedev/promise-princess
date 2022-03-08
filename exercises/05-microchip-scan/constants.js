@@ -16,9 +16,7 @@ class Doggo {
     this.start = performance.now();
   }
 
-  // Princess is happy when it takes less than 550 ms
-  // Princess is annoyed when it takes less than 790 ms
-  // Princess is angry when it takes more than 790 ms
+  // synchronous
   isHappy () {
     const total = performance.now() - this.start;
     if (total < 550) {
@@ -34,6 +32,7 @@ class Doggo {
     ].join(' '));
   }
 
+  // asynchronous
   scan () {
     const isPrincess = this.name === 'princess';
     return new Promise((resolveScan) => {

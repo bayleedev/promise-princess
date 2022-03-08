@@ -7,6 +7,7 @@ class Princess {
     this.total = 0;
   }
 
+  // asynchronous
   giveTreat (alligator) {
     if (alligator !== '🐊') {
       throw new TreatError('👑 Princess demands all treats be alligators. Try passing in an alligator (🐊) to the `giveTreat()` method.')
@@ -26,6 +27,7 @@ class Princess {
     });
   }
 
+  // synchronous
   isHappy () {
     if (this.total === 2) {
       return true;

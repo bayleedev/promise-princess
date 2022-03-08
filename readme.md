@@ -2,7 +2,7 @@
 
 Hello, and welcome to my Promise Workshop, with 🐶 Princess as my helper!
 
-## Getting started 🥳
+## 🥳 Getting started
 
 This is broken up into exercises. When you run the application, it'll go through
 each exercises one by one, if one fails it stops and tells you about it.
@@ -13,7 +13,7 @@ Princess! She'll 🐽 sniff out hints, and ⭐ leave marks on hints she found.
 Most of the exercises are around interacting with a `Princess` or `Doggo`
 objects I created, isolated to the exercise.
 
-## Why alligators?
+## 🐊 Why alligators?
 
 No, I do not feel Princess real 🐊 alligators, she's allergic.
 
@@ -34,7 +34,7 @@ treat called "alligator whimzees" a meat-free dental chew shaped like an
 
 ![alligator whimzee photo](./src/alligator.webp)
 
-## Exercises 🎮
+## 🎮 Exercises
 
 Each exercise is inside a folder in `./exercises` with a simple setup.
 
@@ -88,16 +88,34 @@ It takes 2 arguments:
 
 `assert(1+2==2, '1+1 should be true!')`
 
-## Running 🐶
+## 🐶 Running
+
+Clone and change to that directory:
+
+```
+git clone git@github.com:bayleedev/promise-princess.git
+cd promise-princess
+```
+
+There are no node package dependencies. But, ensure you are using `node 8.5` or
+newer in order for the `perf_tools` to be part of the core library.
+
+Lyceum requests node 14, so you likely are already using a new enough verison.
+
+```
+node --version
+```
+
+To run, simply:
+
+```
+npm start
+```
 
 No need to keep your place, we'll do it for you. Just run the program and we'll
 pick up where you left off.
 
 No worries, our friend Princess will help 💜
-
-```
-npm start
-```
 
 ## 🚧 What is in *that* file?
 

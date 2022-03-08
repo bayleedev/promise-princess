@@ -50,7 +50,7 @@ module.exports = async (assert) => {
   const diegoBarcode = await diego.scan(); // 🐽
   const diegoCode = await diegoBarcode.decode(); // 🐽
 
-  assert(princessCode === 'princess.wiggles')
-  assert(diegoCode === 'diego_rulz_lawl')
+  assert(princessCode === 'princess.wiggles', '🐶 You found Princess!')
+  assert(diegoCode === 'diego_rulz_lawl', '🐩 You found Diego!')
   assert(princess.isHappy(), '👑 Princess must remain happy!');
 }

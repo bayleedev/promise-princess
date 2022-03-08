@@ -9,7 +9,7 @@ class Exercise {
     this.assertCount = 0;
   }
 
-  assertCount (bool, description) {
+  assertAndCount (bool, description) {
     this.assertCount++;
     return this.assert(bool, description);
   }
@@ -44,8 +44,8 @@ class Exercise {
   }
 
   run () {
-    return this.exercise(this.assert)
-      .then(() => this.verifyAssertCount)
+    return this.exercise((a,b) => this.assertAndCount(a, b))
+      .then(() => this.verifyAssertCount())
       .catch((error) => this.catchIt(error));
   }
 }

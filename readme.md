@@ -63,7 +63,12 @@ No worries, our friend Princess will help 💜
 npm start
 ```
 
-## 🚧 `runner.js`
+## 🚧 What is in *that* file?
+
+`.solution.js` - Most exercises have a solution file, you can take a look if you
+ever get stuck on a problem.
+
+`./runner.js` and `./src`
 
 So, sure, you *could* just open this file, there's some neat things in there,
 but you might run into some spoilers.

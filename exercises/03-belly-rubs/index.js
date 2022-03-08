@@ -1,9 +1,4 @@
-const {
-  Princess,
-  PrincessError,
-  AlreadyAwake,
-  AlreadyAsleep,
-} = require('./constants');
+const { Princess } = require('./constants');
 
 // Exercise 3
 // 🐶 Princess wants some belly rubs.

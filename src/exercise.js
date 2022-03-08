@@ -1,4 +1,4 @@
-const { EMOJI_TRAIN, TestFailed } = require('./constants');
+const { EMOJI_TRAIN, AssertError, TestFailed } = require('./constants');
 const path = require('path');
 
 class Exercise {
@@ -16,7 +16,7 @@ class Exercise {
 
   assert (bool, description) {
     if (!bool) {
-      throw Error(description);
+      throw new AssertError(description);
     }
   }
 
@@ -35,7 +35,8 @@ class Exercise {
     console.log('☔ Open `./exercises/' + this.exerciseFile + '/index.js` to debug');
     console.log('\n', EMOJI_TRAIN, '\n\n');
     const regexp = new RegExp(this.exerciseFile);
-    console.log(errorObject.stack.split('\n').filter((line, index) => {
+    const klassName = errorObject.constructor.name;
+    console.log(klassName, errorObject.stack.split('\n').filter((line, index) => {
       if (index === 0) return true;
       return regexp.test(line);
     }).join('\n'));

@@ -27,6 +27,9 @@ const {
 // will cause both scans to start happening, and as each one resolves it
 // decodes. Once both decodes happen, the Promise.all() will resolve.
 //
+// There's a visualization of this concept:
+// https://docs.google.com/spreadsheets/d/1B8qKFSBP_pg48wzk5yva6Z34Yn3y6oekjWXwOVXN0ns
+//
 // 🕸 API Reference 🕸
 // 🧵 Hint: `doggo.isHappy()` is synchronous.
 // 🧵 Hint: `doggo.scan()` returns a `Promise<SCANNED_CODE_OBJ>`.

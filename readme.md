@@ -15,7 +15,7 @@ objects I created, isolated to the exercise.
 
 ## 🐊 Why alligators?
 
-No, I do not feel Princess real 🐊 alligators, she's allergic.
+No, I do not feed Princess real 🐊 alligators. She's allergic.
 
 You might not know this, but dogs often develop allergies to meats over their
 lifetime. So while 🐥🐮 multi-source diets are healthier, single-source diets

@@ -1,6 +1,6 @@
 const { Princess } = require('./constants');
 
-// Exercise 3
+// Exercise 4
 // 🐶 Princess wants some belly rubs.
 // I 'promised' her I'd give her the perfect amount of belly rubs
 // and as we all know, but she wants two belly rubs at the same time, one with

@@ -4,7 +4,7 @@ const {
   DoggoError,
 } = require('./constants');
 
-// Exercise 4
+// Exercise 5
 // 🐶 Princess and her neighbor 🐩 Diego both both microchips
 // These are often placed under a puppies skin when they are young, and if they
 // are ever lost can be scanned by whoever finds them. The unique id on the
